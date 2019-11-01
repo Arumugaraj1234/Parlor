@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextCondensed.ttc">
+            <string>AvenirNextCondensed-DemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsAndConditionsVC" customModule="Parlour" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="c7P-bT-Tdi" id="t7R-RE-WwI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7P-bT-Tdi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khh-IB-sAZ">
+                    <rect key="frame" x="50" y="100" width="275" height="467"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LYC-sU-nym">
+                            <rect key="frame" x="8" y="35.5" width="259" height="423.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <string key="text">1. Arriving on time, or 5 minutes before your appointment. We can’t keep others waiting for their appointment, just as you wouldn’t like to be kept waiting!
+
+2. You can cancel this order befor 2 hrs from booked time.
+
+3. Please book carefully. No-shows and last-minute cancellations means that other clients cannot book into that time slot and it wastes the time and expertise of our highly trained professional stylist.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Terms &amp; Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-Ch-8Ri">
+                            <rect key="frame" x="62" y="8" width="150" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="pC5-Vu-G5o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LYC-sU-nym" secondAttribute="trailing" constant="8" id="CJf-Ia-QJw"/>
+                        <constraint firstItem="Amb-Ch-8Ri" firstAttribute="top" secondItem="khh-IB-sAZ" secondAttribute="top" constant="8" id="HGL-Fx-Ocl"/>
+                        <constraint firstItem="LYC-sU-nym" firstAttribute="top" secondItem="Amb-Ch-8Ri" secondAttribute="bottom" constant="8" id="RIf-PW-PBx"/>
+                        <constraint firstItem="Amb-Ch-8Ri" firstAttribute="centerX" secondItem="khh-IB-sAZ" secondAttribute="centerX" id="Wur-9t-c4o"/>
+                        <constraint firstAttribute="bottom" secondItem="LYC-sU-nym" secondAttribute="bottom" constant="8" id="cDN-jf-t3w"/>
+                        <constraint firstItem="LYC-sU-nym" firstAttribute="leading" secondItem="khh-IB-sAZ" secondAttribute="leading" constant="8" id="i3C-3G-yB1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="khh-IB-sAZ" secondAttribute="bottom" constant="100" id="1Xp-sz-b7T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c7P-bT-Tdi" secondAttribute="trailing" id="GKJ-9O-KYF"/>
+                <constraint firstItem="c7P-bT-Tdi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MK2-wr-Xvg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="c7P-bT-Tdi" secondAttribute="bottom" id="lCO-Dk-dYX"/>
+                <constraint firstItem="khh-IB-sAZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="lrh-6g-r36"/>
+                <constraint firstItem="khh-IB-sAZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="o1I-61-enp"/>
+                <constraint firstItem="c7P-bT-Tdi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rU2-mM-Wpu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="khh-IB-sAZ" secondAttribute="trailing" constant="50" id="yfS-CJ-9Cg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
